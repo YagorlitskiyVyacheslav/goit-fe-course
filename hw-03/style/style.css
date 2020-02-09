@@ -1,0 +1,82 @@
+body {
+    margin: auto;
+    background-image: url(../image/Livello7.png);
+    width: 1200px;
+}
+nav {
+    margin: 64px 0 99px 0;
+}
+.nav_list {
+    margin: auto;
+    padding-left: 0;
+    text-align: center;
+}
+.link {
+    display: inline;
+}
+.link1 {
+    padding-left: 0;
+}
+.link2 {
+    margin-left: 120px;
+}
+.link3 {
+    margin-left: 100px;
+}
+.link4 {
+    margin-left: 95px;
+}
+.link a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(98, 98, 98);
+    font-family: "PlayfairDisplay", serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.link1 a {
+    color: #25b4f5;
+}
+article {
+    display: inline-block;
+    width: 421px;
+}
+.left_article {
+    margin-left: 150px;
+}
+.right_article {
+    margin-left: 56px;
+}
+.midle_article {
+    margin-top: 127px;
+}
+.bottom_article {
+    margin-top: 133px;
+}
+.signature_image {
+    font-size: 14px;
+	font-family: "Ubuntu", sans-serif;
+	color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+h2, .text_article, button {
+    font-family: "PlayfairDisplay", serif;
+    color: rgb(98, 98, 98);
+}
+.text_article {
+    font-size: 14px;
+    line-height: 24px;
+}
+button {
+    display: block;
+    border: 1px solid rgb(98, 98, 98);
+    padding: 19px 34px 20px 34px;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 49px;
+    margin-bottom: 70px;
+}
