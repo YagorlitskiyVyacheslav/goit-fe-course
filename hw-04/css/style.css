@@ -1,0 +1,138 @@
+body {
+    margin: auto;
+    width: 1600px;
+}
+.logo {
+    font-size: 30px;
+    line-height: 32px;
+    color: #605e5e;
+    margin: 37px 0 104px 0;
+    padding-left: 245px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.logo::first-letter {
+    color: #1abc9c;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+.inline-block {
+    display: inline-block;
+}
+nav {
+    vertical-align: top;
+    margin-left: 565px;
+}
+.link1, .link2, .link3, .link4, .link5, .link6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    color: #0f0101;
+    text-transform: uppercase;
+}
+.link1 {
+    color: #1abc9c;
+}
+.link2 {
+    margin-left: 30px;
+}
+.link3 {
+    margin-left: 34px;
+}
+.link4 {
+    margin-left: 27px;
+}
+.link5 {
+    margin-left: 23px;
+}
+.link6 {
+    margin-left: 31px;
+}
+.list {
+    padding-left: 0;
+    margin: 0;
+}
+.list-item {
+    padding-top: 43px;
+}
+h2 {
+    font-size: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #555252;
+}
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.product-item {
+    width: 255px;
+    height: 322px;
+    background-color: #e9f0fd;
+    margin-bottom: 30px;
+}
+.product-item:nth-child(2), .product-item:nth-child(3), .product-item:nth-child(4), .product-item:nth-child(6), .product-item:nth-child(7), .product-item:nth-child(8) {
+    margin-left: 30px;
+}
+.product-item:nth-child(1), .product-item:nth-child(2), .product-item:nth-child(3), .product-item:nth-child(6) {
+
+}
+
+.product-image {
+    width: 255px;
+    height: 282px;
+}
+.signature-product {
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 13px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
+    line-height: 40px;
+}
+.product-price {
+    float: right;
+    padding-right: 12px;
+}
+.article {
+    width: 350px;
+}
+.article2, .article3 {
+    margin-left: 30px;
+}
+h3, button, .text-article {
+    font-family: "Open Sans", sans-serif;
+}
+h3 {
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 18px;
+}
+.text-article {
+    font-size: 14px;
+    line-height: 26px;
+}
+button {
+    font-weight: 300;
+    font-size: 16px;
+    width: 160px;
+    line-height: 51px;
+    background: #4ec6ab;
+    color: #ffffff;
+}
