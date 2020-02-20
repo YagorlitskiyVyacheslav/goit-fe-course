@@ -1,5 +1,5 @@
 body {
-    margin: auto;
+    margin: 0 auto;
     background-image: url(../image/Livello7.png);
     width: 1200px;
 }
@@ -37,13 +37,17 @@ nav {
 .link1 a {
     color: #25b4f5;
 }
+.container {
+    width: 903px;
+    margin: 0 auto;
+}
 article {
     display: inline-block;
     width: 421px;
 }
-.left_article {
+/* .left_article {
     margin-left: 150px;
-}
+} */
 .right_article {
     margin-left: 56px;
 }
@@ -79,4 +83,5 @@ button {
     margin: auto;
     margin-top: 49px;
     margin-bottom: 70px;
+    cursor: pointer;
 }
