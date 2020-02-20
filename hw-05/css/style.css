@@ -21,16 +21,13 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
 }
-
 .inline-block {
     display: inline-block;
 }
-
 nav {
     vertical-align: top;
     margin-left: 565px;
 }
-
 .link1,
 .link2,
 .link3,
@@ -228,6 +225,9 @@ figure {
 
 .product-item:hover .eclipse {
     display: block;
+}
+.product-item:hover .signature-product {
+    background-image: linear-gradient(to right, #1abc9c 79%, #7fd9c7 21%);
 }
 
 .product-actions {
