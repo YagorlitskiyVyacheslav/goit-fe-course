@@ -203,17 +203,17 @@ li {
 
 figure {
     margin: 0;
+    position: relative;
 }
 
 .category {
-    height: 282px;
-    width: 255px;
-    background-size: cover;
+   width: 255px;
 }
 
 .eclipse {
     position: absolute;
     top: 0;
+    z-index: 2;
     box-sizing: border-box;
     border: 10px solid rgba(255, 255, 255, 0.65);
     background-color: rgba(0, 0, 0, 0.55);
@@ -264,7 +264,10 @@ figure {
 }
 
 .signature-product {
-    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: 255px;
+    bottom: 4px;
     text-transform: uppercase;
     padding-left: 13px;
     font-family: "Roboto", sans-serif;
@@ -272,7 +275,6 @@ figure {
     color: rgb(255, 255, 255);
     background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
     line-height: 40px;
-    margin-top: -4px;
 }
 
 .product-price {
