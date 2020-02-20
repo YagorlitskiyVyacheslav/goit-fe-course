@@ -2,14 +2,27 @@ body {
     margin: auto;
     width: 1600px;
 }
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+h1 {
+    margin-top: 37px;
+    margin-bottom: 103px;
+    vertical-align: middle;
+}
 .logo {
+    display: block;
     font-size: 30px;
     line-height: 32px;
     color: #605e5e;
-    margin: 37px 0 104px 0;
-    padding-left: 245px;
+    margin: 0 auto;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    text-decoration: none;
 }
 .logo::first-letter {
     color: #1abc9c;
@@ -20,10 +33,10 @@ body {
     display: inline-block;
 }
 nav {
-    vertical-align: top;
-    margin-left: 565px;
+    float: right;
+    margin-top: 43px;
 }
-.link1, .link2, .link3, .link4, .link5, .link6 {
+.link {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-decoration: none;
@@ -55,9 +68,6 @@ nav {
     margin: 0;
     width: 465px;
 }
-.list-item {
-    padding-top: 43px;
-}
 h2 {
     font-size: 48px;
     font-family: "Roboto", sans-serif;
@@ -77,14 +87,13 @@ h2::after {
     margin-right: auto;
     margin-top: 32px;
 }
-.container {
-    width: 1110px;
-    margin: 0 auto;
-    padding-left: 0;
-}
-.container1 {
+
+/* MAIN SECTION ONE */
+
+.product-list {
     margin-bottom: 105px;
     margin-top: 92px;
+    padding-left: 0
 }
 .clearfix::after {
     content: "";
@@ -121,7 +130,6 @@ h2::after {
     background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
     line-height: 40px;
 }
-
 .product-item:hover .signature-product {
     background-image: linear-gradient(to right, #1abc9c 79%, #7fd9c7 21%);
 }
