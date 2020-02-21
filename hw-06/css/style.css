@@ -159,6 +159,7 @@ h3::after:last-child {
     width: 381px;
     list-style-type: none;
     position: relative;
+    cursor: pointer;
 }
 .name-member {
     font-size: 14px;
@@ -188,9 +189,8 @@ h3::after:last-child {
     justify-content: center;
     align-items: center;
     padding-left: 0;
-    background-image: linear-gradient( rgba(243,129,129, 0) 0%, rgba(252,227,138, 0) 100%);
-    transition-property: background-image;
-    transition-duration: 2s;
+    background-image: linear-gradient( rgba(243,129,129, 0%) 0%, rgba(252,227,138, 0%) 100%);
+    /* opacity: 0; */
 }
 .social-network {
     list-style-type: none;
@@ -200,11 +200,9 @@ button {
     width: 55px;
     height: 55px;
     border: none;
-    background-color: #fce38a;
-    display: none;
-    transition-property: display;
-    transition-duration: 2s;
-    transition-timing-function: linear;
+    background-color: rgb(252, 227, 138);
+    opacity: 0;
+    cursor: pointer;
 }
 button {
     margin-right: 1px;
@@ -232,15 +230,22 @@ button {
 }
 .team-member:hover .gradient-box {
     transition-property: background-image;
-    transition-duration: 2s;
+    /* opacity: 0.9; */
+    transition-duration: 1s;
     transition-timing-function: linear;
-    background-image: linear-gradient( rgba(243,129,129, 0.9) 0%, rgba(252,227,138, 0.9) 100%);
+    background-image: linear-gradient( rgba(243,129,129, 90%) 0%, rgba(252,227,138, 90%) 100%);
 }
 .team-member:hover button {
-    transition-property: display;
-    transition-duration: 2s;
+    transition-property: background-color, opacity;
+    transition-duration: 200ms;
     transition-timing-function: linear;
-    display: block;
+    background-color: rgb(252, 227, 138);
+    opacity: 1;
+}
+button:hover {
+    background-color: rgb(149, 225, 211);
+    width: 60px;
+    height: 60px;
 }
 section:last-child {
     margin-bottom: 80px;
