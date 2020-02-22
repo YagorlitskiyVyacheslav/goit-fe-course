@@ -13,13 +13,13 @@
     <header class="container">
         <h1>HEADER</h1>
         <nav class="header-nav">
-            <a href="#"><img src="image/MoGo.png" alt="" class="logo"></a>
+            <a href="#" tabindex="1"><img src="image/MoGo.png" alt="" class="logo"></a>
             <ul class="nav-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#" tabindex="2">About</a></li>
+                <li><a href="#" tabindex="3">service</a></li>
+                <li><a href="#" tabindex="4">work</a></li>
+                <li><a href="#" tabindex="5">blog</a></li>
+                <li><a href="#" tabindex="6">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -59,37 +59,37 @@
             <h3>Meet our team</h3>
             <p class="description-team description-service">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex laborum dicta adipisci possimus optio porro eaque at! Quia esse eveniet fuga delectus. Obcaecati quo commodi earum tempora quam asperiores hic!</p>
             <ul class="team-list">
-                <li class="team-member">
-                    <img src="image/Person-1.jpg" alt="" class="member">
+                <li class="team-member" tabindex="7">
                     <p class="name-member">Matthew Dix</p>
                     <p class="position">Graphic Design</p>
-                    <ul class="gradient-box">
-                        <li class="social-network"><button class="facebook">Facebook</button></li>
-                        <li class="social-network"><button class="twitter">Twitter</button></li>
-                        <li class="social-network"><button class="pinterest">Pinterest</button></li>
-                        <li class="social-network"><button class="instagram">Instagram</button></li>
+                    <div class="gradient-box" tabindex="8"></div>
+                    <ul class="social-list">
+                        <li class="social-network"><button class="facebook button">Facebook</button></li>
+                        <li class="social-network"><button class="twitter button">Twitter</button></li>
+                        <li class="social-network"><button class="pinterest button">Pinterest</button></li>
+                        <li class="social-network"><button class="instagram button">Instagram</button></li>
                     </ul>
                 </li>
-                <li class="team-member">
-                    <img src="image/Person-2.jpg" alt="" class="member">
+                <li class="team-member" tabindex="9">
                     <p class="name-member">Christopher Campbell</p>
-                    <p class="position">Branding/UX design</p>
-                    <ul class="gradient-box">
-                        <li class="social-network"><button class="facebook">Facebook</button></li>
-                        <li class="social-network"><button class="twitter">Twitter</button></li>
-                        <li class="social-network"><button class="pinterest">Pinterest</button></li>
-                        <li class="social-network"><button class="instagram">Instagram</button></li>
+                    <p class="position">Branding&#47;UX design</p>
+                    <div class="gradient-box"></div>
+                    <ul class="social-list">
+                        <li class="social-network"><button class="facebook button">Facebook</button></li>
+                        <li class="social-network"><button class="twitter button">Twitter</button></li>
+                        <li class="social-network"><button class="pinterest button">Pinterest</button></li>
+                        <li class="social-network"><button class="instagram button">Instagram</button></li>
                     </ul>
                 </li>
-                <li class="team-member">
-                    <img src="image/Person-3.jpg" alt="" class="member">
+                <li class="team-member" tabindex="10">
                     <p class="name-member">Michael Fertig</p>
                     <p class="position">Developer</p>
-                    <ul class="gradient-box">
-                        <li class="social-network"><button class="facebook">Facebook</button></li>
-                        <li class="social-network"><button class="twitter">Twitter</button></li>
-                        <li class="social-network"><button class="pinterest">Pinterest</button></li>
-                        <li class="social-network"><button class="instagram">Instagram</button></li>
+                    <div class="gradient-box"></div>
+                    <ul class="social-list">
+                        <li class="social-network"><button class="facebook button">Facebook</button></li>
+                        <li class="social-network"><button class="twitter button">Twitter</button></li>
+                        <li class="social-network"><button class="pinterest button">Pinterest</button></li>
+                        <li class="social-network"><button class="instagram button">Instagram</button></li>
                     </ul>
                 </li>
             </ul>
@@ -97,6 +97,10 @@
     </main>
     <footer class="container">
         <p class="footer-info">&#169; 2016 MoGo free PSD template by <span class="footer-span">Laaqiq</span></p>
+        <div class="form-subscribe">
+        <input type="text" placeholder="Your Email..." tabindex="11">
+        <button class="subscribe" tabindex="12">Subscribe</button>
+        </div>
     </footer>
 </body>
 </html>

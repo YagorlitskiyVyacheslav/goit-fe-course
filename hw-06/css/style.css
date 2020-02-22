@@ -40,7 +40,8 @@ h1 {
     transition-duration: 200ms;
     transition-timing-function: linear;
 }
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a:focus {
     transition-property: border-bottom, color;
     transition-duration: 200ms;
     transition-timing-function: linear;
@@ -151,10 +152,6 @@ h3::after:last-child {
     padding-left: 0;
     margin: 0;
 }
-.member {
-    transition-property: box-shadow;
-    transition-duration: 200ms;
-}
 .team-member {
     width: 381px;
     list-style-type: none;
@@ -168,7 +165,7 @@ h3::after:last-child {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0;
-    margin-top: 29px;
+    margin-top: 500px;
 }
 .position {
     font-size: 15px;
@@ -185,17 +182,39 @@ h3::after:last-child {
     top: 0;
     width: 381px;
     height: 470px;
+    z-index: 1;
+    background-image: linear-gradient( rgb(243,129,129) 0%, rgb(252,227,138) 100%);
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    opacity: 0;
+}
+.team-member:first-child {
+    background-image: url(../image/Person-1.jpg);
+    background-repeat: no-repeat;
+}
+.team-member:nth-child(2) {
+    background-image: url(../image/Person-2.jpg);
+    background-repeat: no-repeat;
+}
+.team-member:nth-child(3) {
+    background-image: url(../image/Person-3.jpg);
+    background-repeat: no-repeat;
+}
+.social-list {
+    position: absolute;
+    top: 0;
+    width: 381px;
+    height: 470px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 0;
-    background-image: linear-gradient( rgba(243,129,129, 0%) 0%, rgba(252,227,138, 0%) 100%);
-    /* opacity: 0; */
 }
 .social-network {
+    position: relative;
     list-style-type: none;
 }
-button {
+.button {
     font-size: 0;
     width: 55px;
     height: 55px;
@@ -203,8 +222,13 @@ button {
     background-color: rgb(252, 227, 138);
     opacity: 0;
     cursor: pointer;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
 }
-button {
+.social-network {
+    z-index: 2;
+}
+.button {
     margin-right: 1px;
 }
 .instagram {
@@ -222,27 +246,25 @@ button {
 .instagram::before {
     content: url(../image/instagram.png);
 }
-.team-member:hover .member {
-    transition-property: box-shadow;
+.team-member:hover .gradient-box,
+.team-member:focus .gradient-box {
+    transition-property: background-image, box-shadow, opacity;
+    opacity: 0.9;
+    box-shadow: 10px 10px #95e1d3;
     transition-duration: 200ms;
     transition-timing-function: linear;
-    box-shadow: 10px 10px #95e1d3;
+    background-image: linear-gradient( rgb(243,129,129) 0%, rgba(252,227,138) 100%);
 }
-.team-member:hover .gradient-box {
-    transition-property: background-image;
-    /* opacity: 0.9; */
-    transition-duration: 1s;
-    transition-timing-function: linear;
-    background-image: linear-gradient( rgba(243,129,129, 90%) 0%, rgba(252,227,138, 90%) 100%);
-}
-.team-member:hover button {
+.team-member:hover .button,
+.team-member:focus .button {
     transition-property: background-color, opacity;
     transition-duration: 200ms;
     transition-timing-function: linear;
     background-color: rgb(252, 227, 138);
     opacity: 1;
 }
-button:hover {
+.team-member .button:hover,
+.team-member .button:focus {
     background-color: rgb(149, 225, 211);
     width: 60px;
     height: 60px;
@@ -254,6 +276,8 @@ section:last-child {
 /* FOOTER */
 
 footer {
+    display: flex;
+    justify-content: space-between;
     border-top: 1px solid #e5e5e5;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -265,4 +289,25 @@ footer {
 }
 .footer-span {
     color: #f38181;
+}
+.form-subscribe {
+    display: flex;
+}
+input {
+    width: 230px;
+    height: 40px;
+    border-right: none;
+}
+.subscribe {
+    background-color: rgb(149, 225, 211);
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
 }
