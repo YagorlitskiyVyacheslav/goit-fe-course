@@ -1,0 +1,68 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* MOBILE */
+
+header {
+    min-width: 320px;
+    background-image: url(../image/Vector\ Smart\ Object\ Mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    
+}
+.container {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.autorization {
+    text-align: center;
+    margin-bottom: 118px;
+}
+.login {
+    margin-right: 19px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+.signup {
+    height: 36px;
+    width: 90px;
+    border: 2px solid rgb(255, 255, 255);;
+    background-color: transparent;
+    border-radius: 18px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.logo {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.title {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.signature-title {
+    margin: 0 auto;
+    width: 218px;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
