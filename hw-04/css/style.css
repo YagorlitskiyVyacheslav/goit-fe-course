@@ -1,47 +1,29 @@
 body {
-    margin: auto;
-    width: 1600px;
+    margin: 0;
 }
 .container {
     width: 1110px;
     margin: 0 auto;
 }
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 /* HEADER */
 
 h1 {
-    margin-top: 37px;
-    margin-bottom: 103px;
-    vertical-align: middle;
-}
-.logo {
-    display: block;
-    font-size: 30px;
-    line-height: 32px;
-    color: #605e5e;
-    margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-}
-.logo::first-letter {
-    color: #1abc9c;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
+    margin: 0;
 }
 .inline-block {
     display: inline-block;
-}
-nav {
-    float: right;
-    margin-top: 43px;
 }
 .link {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     text-decoration: none;
     font-size: 14px;
-    line-height: 11px;
     color: #0f0101;
     text-transform: uppercase;
 }
@@ -67,15 +49,26 @@ nav {
     padding-left: 0;
     margin: 0;
     width: 465px;
+    float: right;
+    padding-top: 5px;
 }
+nav {
+    margin-top: 37px;
+    margin-bottom: 102px;
+}
+
+/* MAIN SECTION ONE */
+
 h2 {
     font-size: 48px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     text-align: center;
     color: #555252;
-    line-height: 32px;
     margin: 0;
+    position: relative;
+    padding-bottom: 35px;
+    margin-bottom: 92px;
 }
 h2::after {
     content: "";
@@ -83,16 +76,17 @@ h2::after {
     width: 164px;
     height: 7px;
     background-color: #4ec6ab;
-    margin-left: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* margin-left: auto;
     margin-right: auto;
-    margin-top: 32px;
+    margin-top: 32px; */
 }
-
-/* MAIN SECTION ONE */
 
 .product-list {
     margin-bottom: 105px;
-    margin-top: 92px;
     padding-left: 0
 }
 .clearfix::after {
@@ -108,38 +102,58 @@ h2::after {
 }
 .product-item {
     width: 255px;
-    height: 322px;
+    height: auto;
     background-color: #e9f0fd;
-    margin-bottom: 30px;
     list-style-type: none;
+    position: relative;
 }
 .product-item:not(:nth-child(4n)) {
     margin-right: 30px;
+}
+.product-item:nth-last-child(n+5) {
+    margin-bottom: 30px;
 }
 .product-image {
     width: 255px;
     height: 282px;
 }
+.wraper-product-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 .signature-product {
-    margin: 0;
-    text-transform: uppercase;
     padding-left: 13px;
-    font-family: "Roboto", sans-serif;
+    background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
+}
+.signature-product, .product-price {
+    line-height: 40px;
     font-weight: 900;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
-    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 .product-item:hover .signature-product {
     background-image: linear-gradient(to right, #1abc9c 79%, #7fd9c7 21%);
 }
 .product-price {
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     padding-right: 12px;
+}
+
+/* SECTION TWO  */
+
+.title-section2 {
+    margin-bottom: 81px;
+}
+.article-container {
+    margin-bottom: 45px;
 }
 .article {
     width: 350px;
-    margin-top: 81px;
 }
 .article2, .article3 {
     margin-left: 30px;
@@ -163,7 +177,6 @@ button {
     line-height: 51px;
     background: #4ec6ab;
     color: #ffffff;
-    margin-bottom: 45px;
     border-radius: 3px;
     border: none;
 }
