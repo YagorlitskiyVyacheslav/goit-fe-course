@@ -44,7 +44,6 @@ header::after {
 
 .logo {
     width: 177px;
-    margin: 0 auto;
 }
 .login {
     margin-right: 19px;
@@ -62,11 +61,6 @@ header::after {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
-.autorization {
-    text-align: center;
-    margin-bottom: 115px;
-    justify-content: sp;
-}
 
 .title {
     font-size: 30px;
@@ -80,7 +74,6 @@ header::after {
 }
 .signature-title {
     margin: 0 auto;
-    width: 218px;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -174,19 +167,47 @@ h4 {
     margin-right: auto;
 }
  
+
+@media (max-width:767px) {
+    .autorization {
+        margin-bottom: 115px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .autorization {
+        text-align: center;
+    }
+}
 /* TABLET VERSION */
 
 
 @media (min-width:768px) {
+    .title {
+        font-size: 52px;
+    }
+    nav {
+        margin-bottom: 149px;
+    }
+    .autorization {
+        text-align: right;
+    }
     .row-reverse {
         flex-direction: row-reverse;
     }
     header {
         padding-top: 38px;
         margin-bottom: 72px;
+        min-height: 700px;
+    }
+    .signature-title {
+        margin-bottom: 29px;
     }
     h1 {
         margin: 0;
+    }
+    .find-partner {
+        width: 230px;
     }
     section {
         padding-bottom: 40px;
@@ -197,7 +218,7 @@ h4 {
     
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 939px) {
     .partner-card:not(:nth-last-child(-n+2)) {
         margin-bottom: 56px;
     }
