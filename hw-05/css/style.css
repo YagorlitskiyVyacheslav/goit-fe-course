@@ -1,108 +1,91 @@
 body {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1600px;
-}
-
-.logo {
-    font-size: 30px;
-    line-height: 32px;
-    color: #605e5e;
-    margin: 37px 0 31px 0;
-    padding-left: 245px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-}
-
-.logo::first-letter {
-    color: #1abc9c;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-}
-.inline-block {
-    display: inline-block;
-}
-nav {
-    vertical-align: top;
-    margin-left: 565px;
-}
-.link1,
-.link2,
-.link3,
-.link4,
-.link5,
-.link6 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 11px;
-    color: #0f0101;
-    text-transform: uppercase;
-}
-
-.link1 {
-    color: #1abc9c;
-}
-
-.link2 {
-    margin-left: 27px;
-}
-
-.link3 {
-    margin-left: 30px;
-}
-
-.link4 {
-    margin-left: 24px;
-}
-
-.link5 {
-    margin-left: 20px;
-}
-
-.link6 {
-    margin-left: 28px;
-}
-
-.list {
-    padding-left: 0;
     margin: 0;
-    width: 465px;
 }
-
-.list-item {
-    padding-top: 43px;
+.container {
+    width: 1110px;
+    margin: 0 auto;
 }
-
-.section-1 {
-    position: relative;
-    background-image: url(../image/slide41.jpg);
-    background-size: cover;
-    height: 600px;
-    width: 1600px;
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
-
-.section-1::after {
-    content: "";
-    position: absolute;
-    height: 600px;
-    width: 1600px;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 2, 0.5);
-    opacity: 0.522;
-    z-index: 1;
-}
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+ul {
+    padding-left: 0;
+}
 
+/* HEADER */
+
+h1 {
+    margin: 0;
+}
+.inline-block {
+    display: inline-block;
+}
+.link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+    color: #0f0101;
+    text-transform: uppercase;
+}
+.link1 {
+    color: #1abc9c;
+}
+.link2 {
+    margin-left: 27px;
+}
+.link3 {
+    margin-left: 30px;
+}
+.link4 {
+    margin-left: 24px;
+}
+.link5 {
+    margin-left: 20px;
+}
+.link6 {
+    margin-left: 28px;
+}
+.list {
+    padding-left: 0;
+    margin: 0;
+    width: 465px;
+    float: right;
+    padding-top: 5px;
+}
+nav {
+    margin-top: 37px;
+    margin-bottom: 102px;
+}
+
+ /* SECTION ONE */
+
+.section-1 {
+    position: relative;
+    background-image: url(../image/slide41.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-width: 1110px;
+    min-height: 600px;
+}
+.section-1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 600px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 2, 0.5);
+    z-index: 1;
+}
 .carousel-element-text {
     position: relative;
     font-family: "Roboto", sans-serif;
@@ -154,8 +137,11 @@ nav {
     content: "\e684";
 }
 
+/* SECTOIN TWO */
+
 .section-2 {
     background-color: #e9f0fd;
+    min-width: 1110px;
     padding-top: 101px;
     padding-bottom: 101px;
 }
@@ -166,8 +152,10 @@ nav {
     font-weight: 900;
     text-align: center;
     color: #555252;
-    line-height: 32px;
     margin: 0;
+    position: relative;
+    padding-bottom: 35px;
+    margin-bottom: 92px;
 }
 
 .section-2-title::after {
@@ -176,17 +164,16 @@ nav {
     width: 164px;
     height: 7px;
     background-color: #4ec6ab;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 32px;
-    margin-bottom: 81px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 li {
     list-style-type: none;
 }
 .collection-list {
-    width: 1110px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .float-left {
@@ -237,12 +224,13 @@ figure {
     height: 50px;
     display: inline-block;
     margin-top: 0;
-    margin-bottom: 9px;
     background-color: transparent;
     cursor: pointer;
     color: #ffffff;
 }
-
+.product-actions:not(:last-child) {
+    margin-bottom: 9px;
+}
 .product-actions-1 {
     margin-left: 5px;
     margin-top: 79px;
@@ -267,7 +255,7 @@ figure {
     box-sizing: border-box;
     position: absolute;
     width: 255px;
-    bottom: 4px;
+    bottom: 0;
     text-transform: uppercase;
     padding-left: 13px;
     font-family: "Roboto", sans-serif;
