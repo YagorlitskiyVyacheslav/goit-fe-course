@@ -157,6 +157,8 @@ h3::after:last-child {
     list-style-type: none;
     position: relative;
     cursor: pointer;
+    transition-property: transform;
+    transition-duration: 200ms;
 }
 .name-member {
     font-size: 14px;
@@ -254,6 +256,11 @@ h3::after:last-child {
     transition-duration: 200ms;
     transition-timing-function: linear;
     background-image: linear-gradient( rgb(243,129,129) 0%, rgba(252,227,138) 100%);
+}
+.team-member:hover {
+    transition-property: transform;
+    transition-duration: 200ms;
+    transform: translate(-10px, -10px);
 }
 .team-member:hover .button,
 .team-member:focus .button {
