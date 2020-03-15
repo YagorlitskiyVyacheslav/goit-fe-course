@@ -167,7 +167,7 @@ h3::after:last-child {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0;
-    margin-top: 500px;
+    margin-top: 29px;
 }
 .position {
     font-size: 15px;
@@ -190,18 +190,24 @@ h3::after:last-child {
     transition-timing-function: linear;
     opacity: 0;
 }
-.team-member:first-child {
+.team-member-background-1, .team-member-background-2, .team-member-background-3 {
+    height: 470px;
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+.team-member-background-1 {
     background-image: url(../image/Person-1.jpg);
     background-repeat: no-repeat;
 }
-.team-member:nth-child(2) {
+.team-member-background-2 {
     background-image: url(../image/Person-2.jpg);
     background-repeat: no-repeat;
 }
-.team-member:nth-child(3) {
+.team-member-background-3 {
     background-image: url(../image/Person-3.jpg);
     background-repeat: no-repeat;
 }
+
 .social-list {
     position: absolute;
     top: 0;
@@ -250,25 +256,27 @@ h3::after:last-child {
 }
 .team-member:hover .gradient-box,
 .team-member:focus .gradient-box {
-    transition-property: background-image, box-shadow, opacity;
+    transition-property: background-image, box-shadow, opacity, transform;
     opacity: 0.9;
     box-shadow: 10px 10px #95e1d3;
+    transform: translate(-10px, -10px);
     transition-duration: 200ms;
     transition-timing-function: linear;
     background-image: linear-gradient( rgb(243,129,129) 0%, rgba(252,227,138) 100%);
 }
-.team-member:hover {
+.team-member:hover .team-member-background{
     transition-property: transform;
     transition-duration: 200ms;
     transform: translate(-10px, -10px);
 }
 .team-member:hover .button,
 .team-member:focus .button {
-    transition-property: background-color, opacity;
+    transition-property: background-color, opacity, transform;
     transition-duration: 200ms;
     transition-timing-function: linear;
     background-color: rgb(252, 227, 138);
     opacity: 1;
+    transform: translate(-10px, -10px);
 }
 .team-member .button:hover,
 .team-member .button:focus {
