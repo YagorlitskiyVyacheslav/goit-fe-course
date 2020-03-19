@@ -13,7 +13,7 @@ img {
 
 /* HEADER */
 
-h1 {
+.header-logo {
     margin: 0;
 }
 .inline-block {
@@ -30,19 +30,19 @@ h1 {
 .link:hover {
     color: #1abc9c;
 }
-.link2 {
+.list-item:nth-child(2) {
     margin-left: 27px;
 }
-.link3 {
+.list-item:nth-child(3) {
     margin-left: 30px;
 }
-.link4 {
+.list-item:nth-child(4) {
     margin-left: 24px;
 }
-.link5 {
+.list-item:nth-child(5) {
     margin-left: 20px;
 }
-.link6 {
+.list-item:last-child {
     margin-left: 28px;
 }
 .list {
@@ -52,14 +52,14 @@ h1 {
     float: right;
     padding-top: 5px;
 }
-nav {
+.nav-header {
     margin-top: 37px;
     margin-bottom: 102px;
 }
 
 /* MAIN SECTION ONE */
 
-h2 {
+.title-section {
     font-size: 48px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
@@ -67,17 +67,16 @@ h2 {
     color: #555252;
     margin: 0;
     position: relative;
-    padding-bottom: 35px;
-    margin-bottom: 127px;
+    margin-bottom: 162px;
 }
-h2::after {
+.title-section::after {
     content: "";
     display: block;
     width: 164px;
     height: 7px;
     background-color: #4ec6ab;
     position: absolute;
-    bottom: 0;
+    bottom: -35px;
     left: 50%;
     transform: translate(-50%, 0);
     /* margin-left: auto;
@@ -159,10 +158,10 @@ h2::after {
 .article2, .article3 {
     margin-left: 30px;
 }
-h3, button, .text-article {
+.title-article, button, .text-article {
     font-family: "Open Sans", sans-serif;
 }
-h3 {
+.title-article {
     font-weight: 600;
     line-height: 1.4;
     font-size: 18px;
@@ -171,7 +170,7 @@ h3 {
     font-size: 14px;
     line-height: 1.9;
 }
-button {
+.button {
     font-weight: 300;
     font-size: 16px;
     width: 160px;
