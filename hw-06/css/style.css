@@ -18,15 +18,16 @@ h1 {
 .header-nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 28px;
-    margin-bottom: 130px;
+    padding-top: 28px;
+    padding-bottom: 130px;
 }
 .nav-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
-    width: 481px;
+    min-width: 481px;
     padding-left: 0;
 }
 .nav-list a {
@@ -51,36 +52,46 @@ h1 {
 
 /* FIRST MAIN SECTION */
 
-h2, h3 {
+.second-main-section {
+    padding-bottom: 80px;
+}
+
+.first-main-section {
+    padding-bottom: 89px;
+}
+
+.qa, .title {
     text-align: center;
     margin: 0;
     color: #333333;
 }
-h2 {
+.qa {
     font-family: "Kaushan Script", sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
 }
-h3 {
+.title {
+    position: relative;
     text-transform: uppercase;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
+    margin-bottom: 107px;
 }
-h3::after {
+.title::after {
     content: "";
-    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    margin-top: 38px;
-    margin-bottom: 64px;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #f38181;
 }
 .services-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0;
 }
 .card-serveces {
     width: 382px;
@@ -129,14 +140,11 @@ h3::after {
     margin: 0;
     margin-top: 15px;
 }
-section:first-child {
-    margin-bottom: 89px;
-}
 
 /* SECOND MAIN SECTION */
 
-h3::after:last-child {
-    margin-bottom: 41px;
+.title-team {
+    margin-bottom: 89px;
 }
 .description-team {
     width: 941px;
@@ -283,13 +291,10 @@ h3::after:last-child {
     width: 60px;
     height: 60px;
 }
-section:last-child {
-    margin-bottom: 80px;
-}
 
 /* FOOTER */
 
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #e5e5e5;
@@ -311,10 +316,17 @@ input {
     width: 230px;
     height: 40px;
     border-right: none;
+    outline: 0;
+    font-style: italic;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+input [placeholder="Your Email..."] {
+    
 }
 .subscribe {
     background-color: rgb(149, 225, 211);
-    width: 150px;
+    padding: 0 32px;
     height: 40px;
     border: none;
     font-size: 14px;
