@@ -254,17 +254,16 @@ transform: translateX(-50%);
     margin: 0 auto;
 }
 
-.signature {
+.wraper-product-name {
     position: absolute;
     bottom: 0;
     width: 100%;
+    background-color: #323232;
 }
 .signature-product {
     padding-left: 13px;
-    background-image: linear-gradient(to right, #323232 79%, #8c8c8c 21%);
-    width: 242px;
+    float: left;
 }
- 
 .signature-product, .product-price {
     padding-top: 11px;
     padding-bottom: 11px;
@@ -274,15 +273,17 @@ transform: translateX(-50%);
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
-
-.colection-item:hover .signature-product {
-    background-image: linear-gradient(to right, #1abc9c 79%, #7fd9c7 21%);
-}
 .product-price {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    padding-left: 12px;
     padding-right: 12px;
+    float: right;
+    background-color: #8c8c8c;
+}
+.colection-item:hover .wraper-product-name {
+    background-color: #1abc9c;
+}
+.colection-item:hover .product-price {
+    background-color:  #7fd9c7;
 }
 
 .colection-item:hover .eclipse {
