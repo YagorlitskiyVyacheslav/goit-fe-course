@@ -26,14 +26,17 @@
             <p class="paragraph-h2">Proin iaculis purus consequat sem cure.</p>
             <ul class="services-list">
                 <li class="services-card">
+                    <div class="wraper-services-icon"><img src="image/Icon-Basket.png" alt="Basket" width="40px" height="39px" class="services-icon services-icon-basket"></div>
                     <p class="name-services">E-Commerce</p>
                     <p class="description-servece">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsa ipsum nam quae iure sint id culpa ex ea doloribus.</p>
                 </li>
                 <li class="services-card">
+                    <div class="wraper-services-icon"><img src="image/Icon-Laptop.png" alt="Laptop" width="41px" height="35px" class="services-icon"></div>
                     <p class="name-services">Responsive Web</p>
                     <p class="description-servece">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora vitae ex dolores libero harum a explicabo delectus? Temporibus, dicta vero!</p>
                 </li>
                 <li class="services-card">
+                    <div class="wraper-services-icon"><img src="image/Icon-Locked.png" alt="Locked" width="29px" height="38px" class="services-icon"></div>
                     <p class="name-services">Web Security</p>
                     <p class="description-servece">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quas ipsa, perferendis voluptates repudiandae nobis nostrum nam! Velit, et voluptas?</p>
                 </li>
@@ -45,11 +48,11 @@
             <h2 class="footer-h2">Contact us</h2>
             <p class="paragraph-h2">Proin iaculis purus consequat sem cure. </p>
             <form action="#">
-                <div class="input-flex"><input type="text" placeholder="Your Name *" required class="input">
-                <input type="email" placeholder="Your E-mail *" required class="input">
-                <input type="text" placeholder="Subject" class="input">
+                <div class="input-flex"><input type="text" placeholder="Your Name *" name="Name" required class="input input-outline">
+                <input type="email" placeholder="Your E-mail *" name="Email" required class="input input-outline">
+                <input type="text" placeholder="Subject" name="Subject" class="input">
             </div>
-                <textarea name="" id="your-mesage" placeholder="Your Message *" required></textarea>
+                <textarea name="" id="your-mesage" placeholder="Your Message *" minlength="20" name="Message" class="input-outline" required></textarea>
                 <button class="send-mesage">Send Message</button>
             </form>
         </div>

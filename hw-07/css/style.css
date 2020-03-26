@@ -1,11 +1,6 @@
 body {
     margin: 0 auto;
-    width: 1400px;
     font-family: "Montserrat", sans-serif;
-}
-img {
-    width: 100%;
-    height: auto;
 }
 * {
     box-sizing: border-box;
@@ -24,6 +19,7 @@ img {
 .nav-header, .nav-list {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 h1 {
     margin: 0;
@@ -77,30 +73,24 @@ h2 {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 102px;
 }
 .services-card {
     list-style-type: none;
     width: 290px;
     text-align: center;
 }
-.services-card:first-child::before {
-    content: url(../image/Icon-Basket.png);
-}
-.services-card:nth-child(2)::before {
-    content: url(../image/Icon-Laptop.png);
-}
-.services-card:nth-child(3)::before {
-    content: url(../image/Icon-Locked.png);
-}
-.services-card::before {
-    border: 3px solid rgb(254, 209, 54);
-    border-radius: 50%;
-    height: 67px;
-    width: 67px;
+.wraper-services-icon {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0 auto;
+    height: 67px;
+    width: 67px;
+    border: 3px solid rgb(254, 209, 54);
+    border-radius: 50%;
     margin-bottom: 24px;
 }
 .name-services {
@@ -121,21 +111,18 @@ h2 {
 /*  FOOTER */
 
 footer {
-    margin-top: 102px;
-    padding-top: 99px;
-    padding-bottom: 50px;
     background-color: #222222;
     background-image: url(../image/Map\ Image.png);
     background-repeat: no-repeat;
     background-position: right;
     background-position-y: 120px;
+    display: flex;
 }
 .footer-h2 {
     color: #ffffff;
+    margin-top: 99px;
 }
-input[::placeholder]::after {
 
-}
 .input {
     width: 455px;
     height: 53px;
@@ -145,15 +132,21 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 65px;
+    flex-direction: row;
+    margin-bottom: 115px;
+}
+.input-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 textarea {
     height: 215px;
     width: 455px;
 }
-input.input {
+/* input.input {
     margin-bottom: 28px;
-}
+} */
 input, textarea {
     font-size: 14px;
     color: rgb(187, 187, 187);
@@ -170,11 +163,18 @@ textarea {
 .send-mesage {
     border: none;
     border-radius: 3px;
-    background-color: rgb(254, 209, 54);
+    background-color: #fed136;
     padding: 23px 45px;
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 auto;
+    margin-top: 28px;
     cursor: pointer;
+}
+.input-outline:valid {
+    box-shadow: 0 0 5px rgb(0, 128, 0);
+}
+.input-outline:invalid {
+    box-shadow: 0 0 5px rgb(255, 0, 0);
 }
