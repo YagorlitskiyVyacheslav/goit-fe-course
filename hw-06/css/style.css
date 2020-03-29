@@ -15,11 +15,15 @@ body {
 h1 {
     display: none;
 }
+.header-container {
+    display: flex;
+}
 .header-nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 28px;
-    margin-bottom: 130px;
+    margin-bottom: 28px;
 }
 .nav-list {
     display: flex;
@@ -51,7 +55,10 @@ h1 {
 }
 
 /* FIRST MAIN SECTION */
-
+.first-main-section {
+    display: flex;
+    min-width: 1201px;
+}
 .qa, .title {
     text-align: center;
     margin: 0;
@@ -60,6 +67,7 @@ h1 {
 .qa {
     font-family: "Kaushan Script", sans-serif;
     font-size: 24px;
+    margin-top: 102px;
     margin-bottom: 20px;
 }
 .title {
@@ -84,8 +92,7 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-bottom: 89px;
-    margin: 0;
+    margin: 0 0 89px;
 }
 .card-serveces {
     width: 382px;
@@ -137,6 +144,10 @@ h1 {
 
 /* SECOND MAIN SECTION */
 
+.second-main-section {
+    display: flex;
+    min-width: 1201px;
+}
 .title-team {
     margin-bottom: 89px;
 }
@@ -151,8 +162,7 @@ h1 {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 0;
-    margin: 0;
-    padding-bottom: 80px;
+    margin: 0 0 80px;
 }
 .team-member {
     width: 381px;
@@ -301,8 +311,9 @@ h1 {
     font-family: "Montserrat", sans-serif;
     color: rgb(51, 51, 51);
 }
-.footer-span {
+.footer-link {
     color: #f38181;
+    text-decoration: none;
 }
 .form-subscribe {
     display: flex;
@@ -315,9 +326,7 @@ input {
     font-style: italic;
     font-family: "Roboto", sans-serif;
     font-size: 15px;
-}
-input [placeholder="Your Email..."] {
-    
+    padding: 0 10px 0;
 }
 .subscribe {
     background-color: rgb(149, 225, 211);
