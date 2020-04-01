@@ -5,12 +5,19 @@ body {
 * {
     box-sizing: border-box;
 }
+.flex-fix {
+    display: flex;
+    min-width: 940px;
+}
 
 /*  HEADER */
 
-.nav-header {
-    min-height: 114px;
+.h1-logo {
+    font-size: 0;
+}
+.nav-header {   
     align-items: center;
+    margin: 18px 0;
 }
 .container {
     width: 940px;
@@ -74,7 +81,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-bottom: 102px;
+    margin-bottom: 102px;
 }
 .services-card {
     list-style-type: none;
@@ -117,6 +124,7 @@ footer {
     background-position: right;
     background-position-y: 120px;
     display: flex;
+    min-width: 940px;
 }
 .footer-h2 {
     color: #ffffff;
@@ -128,12 +136,15 @@ footer {
     height: 53px;
     display: block;
 }
-form {
+.flex-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
+}
+form {
     margin-bottom: 115px;
+    text-align: center;
 }
 .input-flex {
     display: flex;
@@ -144,9 +155,6 @@ textarea {
     height: 215px;
     width: 455px;
 }
-/* input.input {
-    margin-bottom: 28px;
-} */
 input, textarea {
     font-size: 14px;
     color: rgb(187, 187, 187);
@@ -168,12 +176,11 @@ textarea {
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 auto;
     margin-top: 28px;
     cursor: pointer;
 }
 .input-outline:valid {
-    box-shadow: 0 0 5px rgb(0, 128, 0);
+    box-shadow: 0 0 8px rgb(0, 128, 0);
 }
 .input-outline:invalid {
     box-shadow: 0 0 5px rgb(255, 0, 0);
