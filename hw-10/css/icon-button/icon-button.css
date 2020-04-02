@@ -1,0 +1,23 @@
+.icon-button {
+    border: none;
+    cursor: pointer;
+}
+.icon-button__span {
+    font-size: 0;
+}
+.icon-button--bg-transparent {
+    background-color: transparent;
+}
+.icon-button--wh55px {
+    width: 55px;
+    height: 55px;
+}
+.icon-button--bg-orange {
+    background-color: #fce38a;
+}
+.icon-button--hover-red:hover {
+    background-color: #f38181;
+}
+.icon-button--bg-orange:hover .icon-button--hover-white{
+    fill: #fff;
+}
