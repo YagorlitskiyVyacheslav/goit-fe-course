@@ -12,12 +12,15 @@
     width: 55px;
     height: 55px;
 }
+.icon-button__svg--color-white, .icon-button--bg-orange:hover .icon-button--hover-white {
+    fill: #fff;
+}
 .icon-button--bg-orange {
     background-color: #fce38a;
 }
-.icon-button--hover-red:hover {
-    background-color: #f38181;
+.icon-button__svg--color-pink {
+    fill: #f38181;
 }
-.icon-button--bg-orange:hover .icon-button--hover-white{
-    fill: #fff;
+.icon-button--hover-pink:hover {
+    background-color: #f38181;
 }
