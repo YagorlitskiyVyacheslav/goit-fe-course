@@ -8,9 +8,23 @@
 .icon-button--bg-transparent {
     background-color: transparent;
 }
+.icon-button--hover-scale:hover {
+    transform: scale(1.2);
+}
 .icon-button--wh55px {
     width: 55px;
     height: 55px;
+}
+.icon-button__svg, .icon-button {
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 200ms;
+         -o-transition-duration: 200ms;
+            transition-duration: 200ms;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
 }
 .icon-button__svg--color-white, .icon-button--bg-orange:hover .icon-button--hover-white {
     fill: #fff;
@@ -23,4 +37,7 @@
 }
 .icon-button--hover-pink:hover {
     background-color: #f38181;
+}
+.icon-button--hover-orange:hover .icon-button__svg--color-white {
+    fill: #fce38a;
 }

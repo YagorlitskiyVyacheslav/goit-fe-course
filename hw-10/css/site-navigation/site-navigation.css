@@ -19,7 +19,6 @@
             align-items: center;
     min-width: 620px;
     max-width: 800px;
-
 }
 .site-navigation__item:not(:last-child){
     margin-right: 58px;
@@ -40,7 +39,7 @@
          -o-transition-timing-function: linear;
             transition-timing-function: linear;
 }
-.site-navigation__link--hover:hover {
+.site-navigation__link--hover:hover{
     color: #fce38a;
     border-bottom: 4px solid #fce38a;
     padding-bottom: 11px;
