@@ -16,34 +16,29 @@ li {
 a {
     text-decoration: none;
 }
+.flex-fix {
+    display:  flex;
+}
+.text-align-center {
+    text-align: center;
+}
+
+/* MOBILE */
+
+.header-cont {
+    margin: 20px auto 138px;
+    flex-basis: 100%;
+}
 header {
     min-width: 320px;
     background-image: url(../image/Vector\ Smart\ Object.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
-    min-height: 540px;
-    padding-top: 20px;
-    margin-bottom: 78px;
     position: relative;
 }
-.chiping {
-    position: relative;
-    z-index: 2;
-}
-header::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    background-color: rgba(26, 25, 21, 0.2);
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-/* MOBILE VERSION */
-
-.logo {
-    width: 177px;
+.autorization {
+    text-align: center;
 }
 .login {
     margin-right: 19px;
@@ -61,19 +56,20 @@ header::after {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
-
+.logo {
+    width: 178px;
+    height: 20px;
+}
+.title, .signature-title, .header-button {
+    margin: 0 auto;
+}
 .title {
     font-size: 30px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
 }
-.margin-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
 .signature-title {
-    margin: 0 auto;
     font-size: 18px;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
@@ -82,25 +78,25 @@ header::after {
 }
 .find-partner {
     border: none;
+    margin: 0 auto;
     border-radius: 20px;
     background-color: rgb(255, 78, 80);
-    width: 280px;
-    height: 42px;
-    padding: 0;
+    padding: 12px 50px;
     font-size: 14px;
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
-.text-align {
+
+/* MAIN MOBILE */
+
+.layer-list {
+    margin-bottom: 30px;
+}
+.layer-card {
+    width: 220px;
     text-align: center;
+    margin: 0 auto;
 }
-
-/* MAIN */
-
-section {
-    padding-bottom: 57px;
-}
-
 .layer {
     width: 120px;
     height: 120px;
@@ -139,6 +135,7 @@ h3 {
     font-size: 22px;
     color: rgb(51, 51, 51);
     font-weight: bold;
+    margin-top: 78px;
 }
 h4 {
     font-size: 14px;
@@ -149,77 +146,67 @@ h4 {
     font-size: 14px;
     font-family: "Roboto", sans-serif;
     color: rgb(102, 102, 102);
-    width: 230px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .other-partner {
     border: 2px solid rgb(255, 78, 80);
     border-radius: 20px;
     background-color: transparent;
-    width: 280px;
-    height: 40px;
+    padding: 12px 75px;
     font-size: 14px;
     color: rgb(255, 78, 80);
     font-weight: bold;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 57px;
 }
- 
 
-@media (max-width:767px) {
-    .autorization {
-        margin-bottom: 115px;
-    }
+@media (max-width: 767px){
     .logo {
         margin: 0 auto;
     }
     .autorization {
-        text-align: center;
+        margin-bottom: 118px;
+    }
+    .title {
+        margin-top: 33px;
+        margin-bottom: 15px;
     }
 }
+
 /* TABLET VERSION */
-
-
-@media (min-width:768px) {
-    .title {
-        font-size: 52px;
-    }
-    nav {
-        margin-bottom: 149px;
+  
+@media (min-width: 768px) {
+    .header-cont {
+        margin: 38px auto 235px;
+        flex-basis: 100%;
     }
     .autorization {
         text-align: right;
     }
-    .row-reverse {
-        flex-direction: row-reverse;
+    .header-list {
+        margin-bottom: 145px;
     }
-    header {
-        padding-top: 38px;
-        margin-bottom: 72px;
-        min-height: 700px;
-    }
-    .signature-title {
-        margin-bottom: 29px;
-    }
-    h1 {
-        margin: 0;
-    }
-    .find-partner {
-        width: 230px;
-    }
-    section {
-        padding-bottom: 40px;
-    }
-    .partner-list {
+
+    .title {
+        font-size: 52px;
         margin-bottom: 40px;
     }
-    
-}
-
-@media (min-width: 768px) and (max-width: 939px) {
-    .partner-card:not(:nth-last-child(-n+2)) {
-        margin-bottom: 56px;
+    .signature-title {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    .find-partner {
+        padding: 12px 25px;
+    }
+    h3 {
+        margin-top: 73px;
+    }
+    .other-partner {
+        margin-bottom: 40px;
+        padding: 12px 30px;
+    }
+    .layer-list {
+        margin-bottom: 38px;
     }
 }
+
+/* DESKTOP VERSION */
+
