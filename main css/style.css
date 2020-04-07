@@ -71,3 +71,20 @@ a:hover {
     border-bottom: 4px solid #fce38a;
     padding-bottom: 11px;
 }
+
+@media (max-width: 768px){
+    li {
+        flex-basis: 50%;
+    }
+    li:not(:nth-last-child(-n+2)) {
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 380px) {
+    li {
+        flex-basis: 100%;
+    }
+    li:not(:nth-last-child(-n+1)) {
+        margin-bottom: 50px;
+    }
+}
