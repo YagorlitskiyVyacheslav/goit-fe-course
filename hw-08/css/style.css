@@ -36,7 +36,7 @@ header {
     position: relative;
 }
 .container {
-    width: 320px;
+    width: 280px;
     margin: 0 auto;
     text-align: center;
 }
@@ -65,7 +65,8 @@ header {
     height: 20px;
 }
 .title {
-    font-size: 30px;
+    font-size: 28px;
+    margin: 36px 0 16px 0;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-transform: uppercase;
@@ -95,7 +96,7 @@ header {
 
 .layer-card {
     width: 220px;
-    margin: 0 auto;
+    margin: 0 auto 26px;
 }
 .layer {
     width: 120px;
@@ -135,7 +136,7 @@ h3 {
     font-size: 22px;
     color: rgb(51, 51, 51);
     font-weight: bold;
-    margin-top: 78px;
+    margin: 68px 0 19px;
 }
 h4 {
     font-size: 14px;
@@ -174,8 +175,6 @@ h4 {
     }
     .container {
         width: 748px;
-        padding-left: 10px;
-        padding-right: 10px;
     }
     .autorization {
         margin-bottom: 0;
@@ -208,7 +207,7 @@ h4 {
     /* MAIN TABLET */
     
     h3 {
-        margin-top: 69px;
+        margin: 68px 0 33px;
     }
     .layer-list {
         display: flex;
@@ -218,30 +217,6 @@ h4 {
         margin: 0 auto;
         margin-bottom: 37px;
     }
-    .layer-card:first-child {
-        order: 1;
-    }
-    .layer-card:nth-child(2) {
-        order: 3;
-    }
-    .layer-card:nth-child(3) {
-        order: 2;
-    }
-    .layer-card:nth-child(4) {
-        order: 4;
-    }
-    .tv {
-        order: 1;
-    }
-    .flask {
-        order: 3;
-    }
-    .coffee {
-        order: 2;
-    }
-    .telegram {
-        order: 4;
-    }
     .layer-card {
         width: 50%;
     }
@@ -250,7 +225,10 @@ h4 {
         margin: 0 auto;
     }
     .layer-card:not(:nth-last-child(-n+2)) {
-        margin-bottom: 57px;
+        margin-bottom: 55px;
+    }
+    .layer-card:not(:nth-last-child(n+3)) {
+        margin-bottom: 0;
     }
     .other-partner {
         width: 190px;
