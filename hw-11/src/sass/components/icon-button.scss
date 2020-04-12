@@ -1,6 +1,7 @@
 .icon-button {
     border: none;
     cursor: pointer;
+    @extend %transition;
 }
 .icon-button__span {
     font-size: 0;
@@ -15,16 +16,8 @@
     width: 55px;
     height: 55px;
 }
-.icon-button__svg, .icon-button {
-    -webkit-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 200ms;
-         -o-transition-duration: 200ms;
-            transition-duration: 200ms;
-    -webkit-transition-timing-function: linear;
-         -o-transition-timing-function: linear;
-            transition-timing-function: linear;
+.icon-button__svg {
+    @extend %transition;
 }
 .icon-button__svg--color-white, .icon-button--bg-orange:hover .icon-button--hover-white {
     fill: #fff;
