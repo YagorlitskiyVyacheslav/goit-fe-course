@@ -1,0 +1,7 @@
+.social-list {
+    @include flexbox(center, center)
+    padding-left: 0;
+}
+.social-list__item:not(:last-child) {
+    margin-right: 1px;
+}

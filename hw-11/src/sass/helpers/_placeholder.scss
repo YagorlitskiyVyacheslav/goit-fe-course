@@ -1,0 +1,18 @@
+%eclipse {
+    background-image: -webkit-gradient( linear, left top, left bottom, from($pink-color), to($orange-color));
+    background-image: -o-linear-gradient( $pink-color 0%, $orange-color 100%);
+    background-image: linear-gradient( $pink-color 0%, $orange-color 100%);
+}
+%team-image-sizes {
+    width: 382px;
+    height: 472px;
+}
+%tr-translate {
+    transform: translate(-10px, -10px);
+}
+%cursor-pointer {
+    cursor: pointer;
+}
+%text-align-center {
+    text-align: center;
+}

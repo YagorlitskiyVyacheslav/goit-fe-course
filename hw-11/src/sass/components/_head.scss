@@ -1,0 +1,36 @@
+.head {
+    color: $primary-color;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    z-index: 1;
+
+    &__title {
+        font-size: 72px;
+        font-family: "Kaushan Script", sans-serif;
+        margin-top: 176px;
+        margin-bottom: 52px;
+    }
+
+    &__invitation {
+        width: 821px;
+        margin: 0 auto;
+        font-size: 150px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 0.9;
+        text-transform: uppercase;
+        margin-bottom: 116px;
+    }
+
+    &__button {
+        border: 3px solid $primary-color;
+        background-color: transparent;
+        font-size: 14px;;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $primary-color;
+        padding: 11px 29px;
+        margin-bottom: 230px;
+    }
+}

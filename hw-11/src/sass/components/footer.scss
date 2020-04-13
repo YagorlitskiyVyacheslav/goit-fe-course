@@ -1,0 +1,15 @@
+.footer {
+    @include flexbox(space-between, center);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    &__info {
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        color: $secondary-color;
+    }
+    &__link {
+        color: $pink-color;
+        text-decoration: none;
+        @extend %cursor-pointer;
+    }
+}

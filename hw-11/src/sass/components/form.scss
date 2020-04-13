@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    &__email {
+        width: 230px;
+        height: 40px;
+        border: 1px solid $light-gray-color;
+        border-right: none;
+        outline: 0;
+        font-style: italic;
+        font-family: "Roboto", sans-serif;
+        font-size: 15px;
+        padding: 0 10px 0;
+    }
+    &__subscribe{
+        background-color: $light-spring-green;
+        padding: 0 32px;
+        height: 40px;
+        border: none;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        color: $primary-color;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        @extend %cursor-pointer;
+    }
+}

@@ -1,0 +1,31 @@
+@mixin background($url, $urlx2, $size, $position, $repeat){
+  background-image: url($url);
+  background-size: $size;
+  background-position: $position;
+  background-repeat: $repeat;
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    background-image: url($urlx2);}
+  }
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  }
+
+  @mixin transition($property: all, $duration: 0.2s, $ease: linear){
+    -webkit-transition: $property $duration $ease;
+    -moz-transition: $property $duration $ease;
+    -o-transition: $property $duration $ease;
+    transition: $property $duration $ease;
+  }
+  
+  @mixin flexbox($justify-content: null, $align-items: null, $flex-direction: row) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: wrap;
+    flex-direction: $flex-direction;
+  }
