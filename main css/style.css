@@ -39,8 +39,11 @@ li {
     flex-basis: 33.3333%;
     min-height: 45px;
 }
-li:not(:nth-last-child(-n+3)) {
+li:not(:nth-last-child(-n+1)) {
     margin-bottom: 50px;
+}
+li:last-child {
+    margin: 0 auto;
 }
 nav {
     display: flex;
