@@ -1,6 +1,7 @@
 .icon-button {
     border: none;
     @extend %cursor-pointer;
+    @include flexbox(center, center);
 
     &__span {
         font-size: 0;
