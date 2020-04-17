@@ -1,0 +1,25 @@
+.services-item {
+    width: 392px;
+    list-style-type: none;
+    padding-left: 82px;
+    @include position(relative);
+    box-sizing: border-box;
+    
+    &__item:not(:nth-last-child(-n+3)) {
+      margin-bottom: 100px;
+    }
+
+    &__svg {
+      @include position(absolute, $left: 20px);
+      fill: $light-spring-green;
+    }
+
+    &__title {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      color: $secondary-color;
+      text-transform: uppercase;
+      margin: 0;
+    }
+}

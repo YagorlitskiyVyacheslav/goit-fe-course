@@ -1,8 +1,14 @@
 .section {
     display: flex;
     
-    &__wraper {
-        margin-top: 102px;
+    &__first {
+      margin-top: 102px;
+      margin-bottom: 40px;
+    }
+
+    &__seconadary {
+      margin-top: 49px;
+      margin-bottom: 85px;
     }
     &__description, &__title {
         @extend %text-align-center;
@@ -29,5 +35,8 @@
             height: 3px;
             background-color: $pink-color;
         }
+    }
+    &__list {
+      @include flexbox(space-between)
     }
 }

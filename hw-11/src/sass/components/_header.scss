@@ -1,6 +1,8 @@
 .header {
   @include background("../images/Layer_15.jpg", "../images/Layer_15@2x.jpg", cover, top center, no-repeat)
   position: relative;
+  padding-top: 30px;
+  padding-bottom: 230px;
 
   &::after {
     content: "";

@@ -2,10 +2,6 @@
     margin: 0;
     font-size: 0;
 }
-.page-nav {
-    @include flexbox(space-between);
-    padding-top: 30px;
-}
 .site-navigation {
     @include flexbox(space-between, center);
     min-width: 620px;

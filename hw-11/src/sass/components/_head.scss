@@ -5,6 +5,10 @@
     position: relative;
     z-index: 1;
 
+    &__page-nav {
+      @include flexbox(space-between);
+    }
+
     &__title {
         font-size: 72px;
         font-family: "Kaushan Script", sans-serif;
@@ -31,6 +35,5 @@
         text-transform: uppercase;
         color: $primary-color;
         padding: 11px 29px;
-        margin-bottom: 230px;
     }
 }
