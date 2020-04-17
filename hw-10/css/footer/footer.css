@@ -19,12 +19,12 @@
     text-decoration: none;
     cursor: pointer;
 }
-.form {
+.footer-form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.form__email {
+.footer-form__email {
     width: 230px;
     height: 40px;
     border: 1px solid #e5e5e5;
@@ -35,7 +35,7 @@
     font-size: 15px;
     padding: 0 10px 0;
 }
-.form__subscribe{
+.footer-form__subscribe{
     background-color: rgb(149, 225, 211);
     padding: 0 32px;
     height: 40px;
