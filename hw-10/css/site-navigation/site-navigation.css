@@ -1,13 +1,4 @@
 @import url("logo/logo.css") all;
-.page-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 30px;
-}
 .site-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
