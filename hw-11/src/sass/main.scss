@@ -8,14 +8,17 @@
 @import 'normalize';
 @import 'base';
 
-@import "components/_header";
-@import "components/_paragraph";
-@import "components/_head";
-@import "components/icon-button";
-@import "components/_site_navigation";
-@import "components/_section";
-@import "components/servises-item";
-@import "components/_team-list";
-@import "components/_social-list";
-@import "components/footer";
-@import "components/form";
+@import "components/header/_header";
+@import "components/header/_head";
+@import "components/header/_site_navigation";
+
+@import "components/section-services/_section";
+@import "components/section-services/servises-item";
+@import "components/section-services/_paragraph";
+
+@import "components/section-team/_social-list";
+@import "components/section-team/_team-list";
+@import "components/section-team/icon-button";
+
+@import "components/footer/footer.scss";
+@import "components/footer/form.scss";

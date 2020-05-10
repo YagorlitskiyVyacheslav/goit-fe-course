@@ -32,23 +32,23 @@
       opacity: 0;
       @include transition($duration: 0.1s) z-index: 2;
     }
+    &--hover:hover {
+
+      .team-item__image,
+      .team-item__social {
+        @extend %tr-translate;
+      }
+
+      .team-item__social {
+        opacity: 1;
+      }
+
+      .team-item__eclipse {
+        opacity: 0.9;
+        box-shadow: 10px 10px $light-spring-green;
+        @extend %tr-translate;
+        background-image: linear-gradient($pink-color 0%, $orange-color 100%);
+      }
+    }
 }
 
-.team-item--hover:hover {
-
-  .team-item__image,
-  .team-item__social {
-    @extend %tr-translate;
-  }
-
-  .team-item__social {
-    opacity: 1;
-  }
-
-  .team-item__eclipse {
-    opacity: 0.9;
-    box-shadow: 10px 10px $light-spring-green;
-    @extend %tr-translate;
-    background-image: linear-gradient($pink-color 0%, $orange-color 100%);
-  }
-}

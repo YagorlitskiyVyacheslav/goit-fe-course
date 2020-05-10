@@ -1,0 +1,27 @@
+.logo {
+    margin: 0;
+    font-size: 0;
+}
+.site-navigation {
+    @include flexbox(space-between, center);
+    min-width: 620px;
+    max-width: 800px;
+    &__item:not(:last-child) {
+      margin-right: 58px;
+    }
+
+    &__link {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      color: $primary-color;
+      @include transition();
+    }
+
+    &__link--hover:hover {
+      color: $orange-color;
+      border-bottom: 4px solid $orange-color;
+      padding-bottom: 11px;
+    }
+}

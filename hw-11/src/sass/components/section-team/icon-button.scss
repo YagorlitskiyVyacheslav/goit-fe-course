@@ -1,0 +1,47 @@
+.icon-button {
+    border: none;
+    @extend %cursor-pointer;
+    @include flexbox(center, center);
+    @include transition();
+    &__span {
+        font-size: 0;
+    }
+    &--bg-transparent {
+      background-color: transparent;
+    }
+
+    &--hover-scale:hover {
+      transform: scale(1.2);
+    }
+
+    &--wh55px {
+      width: 55px;
+      height: 55px;
+    }
+
+    &__svg {
+      @include transition();
+    }
+
+    &__svg--color-white,
+    &--bg-orange:hover .icon-button--hover-white {
+      fill: $primary-color;
+    }
+
+    &--bg-orange {
+      background-color: $orange-color;
+    }
+
+    &__svg--color-pink {
+      fill: $pink-color;
+    }
+
+    &--hover-pink:hover {
+      background-color: $pink-color;
+    }
+
+    &--hover-orange:hover .icon-button__svg--color-white {
+      fill: $orange-color;
+    }
+}
+
